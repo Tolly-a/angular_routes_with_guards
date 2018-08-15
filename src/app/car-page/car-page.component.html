@@ -1,0 +1,17 @@
+<!-- localhost:4200/cars/1/Ford ? year=2017 & color=red # pic -->
+<h3>Car page</h3>
+<h5>Car Id = {{id}}</h5>
+<h5>{{name}}</h5>
+<p>year: {{year}}</p>
+<p>color: {{color}}</p>
+<p>hesh: {{hesh}}</p>
+
+<hr />
+
+<!-- sending parameters to URL throw routerLink -->
+<!-- <h4><a [routerLink]="['/cars', 8, 'Mazda']">Open Mazda page</a></h4> -->
+
+
+
+<!-- sending parameters to URL pragrammatically -->
+<button type="button" (click)="openMazdaPage()">Open Mazda page </button>

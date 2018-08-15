@@ -1,0 +1,32 @@
+<div class="container">
+
+        <nav style="margin-bottom: 20px;" class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                  <a class="nav-link" routerLink="/">Home page</a>
+                </li>
+                <!--   
+                  routerLinkActive="active" - this directvie set class active to Active Linck
+                  [routerLinkActiveOptions]="{ exact: true }" - this directvie checked when home page link not active
+                 -->
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="'/cars'">Cars page</a>
+                </li>
+              
+              </ul>
+            </div>
+          </nav>
+
+
+  <div class="row">
+    <div class="col-10 col-offset-1">
+      <router-outlet></router-outlet>
+      <!-- 
+        <app-home-page></app-home-page>
+        <app-cars-page></app-cars-page> 
+      -->
+    </div>
+  </div>
+
+</div>
